@@ -1,0 +1,26 @@
+[
+  {
+    "id_product": 100700034,
+    "name_product": "Croissant",
+    "number_product": 22,
+    "price": 1.8
+  },
+  {
+    "id_product": 100700070,
+    "name_product": "Black bread",
+    "number_product": 12,
+    "price": 0.75
+  },
+  {
+    "id_product": 100700080,
+    "name_product": "Danish pastry",
+    "number_product": 452,
+    "price": 2.5
+  },
+  {
+    "id_product": 100700091,
+    "name_product": "Grain roll",
+    "number_product": 202,
+    "price": 0.9
+  }
+]
