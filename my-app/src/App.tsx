@@ -19,10 +19,6 @@ import stores from './data/stores.json'
 import baeckerAILogo from './baeckerAi-logo.jpeg';
 import './App.css';
 
-
-
-
-
 function App() {
     const [reportData, setReportData] = React.useState< ReportingViewData[]>([]);
     const [storeIds, setStoreIds] = React.useState<number[]>([])
@@ -58,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <Grid container flexDirection="column">
-          <Grid className="header" container justifyContent="center" alignItems="flex-start" aria-label="Header">
+          <Grid className="header" container justifyContent="center" alignItems="center" aria-label="Header">
               <img className="logo" src={baeckerAILogo} alt="BaeckerAILogo" aria-label="Logo"/>
               <Typography className="title" variant="h2" component="h2" aria-label="Title">Reporting View</Typography>
           </Grid>
