@@ -27,6 +27,18 @@ export interface Sales {
     "demand_value": number
 }
 
+export interface Store {
+    "id_store": number,
+    "store_label": string,
+    "number_store": number
+}
+
+export interface Product {
+    "id_product": number,
+    "name_product": string,
+    "number_product": number,
+    "price": number
+}
 export interface Payload {
     chartType: string | undefined;
     color: string
@@ -38,4 +50,8 @@ export interface Payload {
     type: string | undefined;
     unit: string | undefined;
     value: string | number | undefined;
+}
+
+export interface ColorScheme{
+    [key: string]: string
 }

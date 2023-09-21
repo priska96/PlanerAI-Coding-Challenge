@@ -21,7 +21,36 @@
   border-radius: 10px;
   border: 1px solid gray;
   padding: 5px;
+  max-width: 220px;
   .target_date{
     font-weight: bold;
+  }
+  .conclusion{
+    display: block;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .store-name{
+    font-weight: bold;
+  }
+  .type{
+    display: flex;
+    align-items: center;
+  }
+  .markerIcon{
+    margin-left: 3px;
+    border-radius: 50%;
+    padding: 0 3px;
+    fill: white;
+    width: 15px;
+  }
+}
+
+.custom-legend{
+  .legend-colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
