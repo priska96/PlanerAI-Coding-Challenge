@@ -88,7 +88,7 @@ export const determineImprovementDeterioration = (items: Payload[]) =>{
     const winners: string[] = [];
     const losers: string[] = [];
     const message: string[] = [];
-    deliveredItems.forEach((item, idx)=> {
+    deliveredItems.forEach(item=> {
         const splitName = item.dataKey.split('_');
         const storeProduct = splitName[0] + '_' + splitName[1];
         const recommendation = items.filter(item => item.dataKey === storeProduct + '_recommendation');
@@ -153,7 +153,7 @@ export const determineImprovementDeterioration2 = (items: ReportingViewData, fil
         target_date: items.target_date
     }
 
-    deliveredItems.forEach((item, idx)=> {
+    deliveredItems.forEach(item => {
         const splitName = item.split('_');
         const storeProduct = splitName[0] + '_' + splitName[1];
         if(!(filterStore.includes(parseInt(splitName[0])) && filterProduct.includes(parseInt(splitName[1])))){
