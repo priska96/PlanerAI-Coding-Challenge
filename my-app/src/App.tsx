@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
                     {(payload as Payload[]).map((activeElement, idx)=>{
                         const splitName = activeElement.dataKey.split('_');
                         return(
-                            <p>
+                            <p key={idx}>
                                 <span>{getStoreLabelById(splitName[0])}:</span>
                                 <span>{getProductNameById(splitName[1])}:
                                     {getType(splitName[2])}{activeElement.value}</span>
@@ -84,7 +84,7 @@ function App() {
                       onChange={handleSetFilter('store')}
                   >
                       {stores.map((store, idx)=>{
-                          return <FormControlLabel value={store.id_store} control={<Radio />} label={store.store_label} />
+                          return <FormControlLabel key={idx} value={store.id_store} control={<Radio />} label={store.store_label} />
                       })}
                   </RadioGroup>
               </FormControl>
@@ -96,7 +96,7 @@ function App() {
                       onChange={handleSetFilter('product')}
                   >
                       {products.map((product, idx)=>{
-                          return <FormControlLabel value={product.id_product} control={<Radio />} label={product.name_product} />
+                          return <FormControlLabel key={idx} value={product.id_product} control={<Radio />} label={product.name_product} />
                       })}
                   </RadioGroup>
               </FormControl>
