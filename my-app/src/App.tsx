@@ -70,7 +70,7 @@ function App() {
           />
           <Grid style={{height: 500}}
                 aria-label="Chart">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={600} minHeight={300} >
                   <BarChart
                       width={500}
                       height={300}

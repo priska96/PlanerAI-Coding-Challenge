@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project shows a reporting view with which you can
+1. analyze how often past recommendation and delivery quantities differ (which means the customer has adjusted the order in the end) and
+2. see whether these adjustments improved (the actual delivery quantity is closer to the demand than our order recommendation) or deteriorated the final orders (our order recommendation would have been closer to actual demand).
 
 ## Available Scripts
 
